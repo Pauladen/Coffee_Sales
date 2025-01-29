@@ -43,6 +43,7 @@ Source: Coffee Bean Sales Raw Dataset [KAGGLE](https://www.kaggle.com/datasets/s
 - Power BI Dashboard: Visual representation of sales performance.
 - SQL Scripts: A script file with all queries used for analysis.
 - Final Report: A PowerPoint report summarizing findings and recommendations.
+--- 
 
 
 
