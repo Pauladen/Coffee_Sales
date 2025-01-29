@@ -30,6 +30,20 @@ Source: Coffee Bean Sales Raw Dataset [KAGGLE](https://www.kaggle.com/datasets/s
 - Use pivot tables to summarize sales by region and bean type.
 - Perform trend analysis on sales data over time.
 - Create a regression model to assess pricing impact on quantity sold.
+### Power BI Tasks:
+- Build a dashboard to visualize sales distribution by region and bean type.
+- Include KPIs for revenue, average price by kilogram, orders, sales volume, and profit.
+### SQL Tasks:
+- Load the data to MySQL workbench as a database.
+- Write queries to extract top-performing regions and bean types.
+- Use aggregations to calculate average revenue per customer.
+
+### Deliverables:
+- Excel File: Cleaned data and insights via pivot tables.
+- Power BI Dashboard: Visual representation of sales performance.
+- SQL Scripts: A script file with all queries used for analysis.
+- Final Report: A PowerPoint report summarizing findings and recommendations.
+
 
 
 
