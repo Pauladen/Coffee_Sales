@@ -16,6 +16,22 @@ Global Coffee Supplies Ltd. operates as a wholesaler of coffee beans, catering t
 ### Dataset Overview:
 Source: Coffee Bean Sales Raw Dataset [KAGGLE](https://www.kaggle.com/datasets/saadharoon27/coffee-bean-sales-raw-dataset)
 
+### Fields:
+- Order ID: Unique identifier for each order.
+- Bean Type: Type of coffee bean sold.
+- Price: Unit price of the bean.
+- Quantity: Amount of beans sold in kilogram.
+- Customer ID: Identifier for the customer placing the order.
+- Region: Geographic location of the customer.
+
+### Tasks and Tools:
+
+### Excel Tasks:
+- Use pivot tables to summarize sales by region and bean type.
+- Perform trend analysis on sales data over time.
+- Create a regression model to assess pricing impact on quantity sold.
+
+
 
 
 
