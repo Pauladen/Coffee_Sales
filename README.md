@@ -72,6 +72,11 @@ Source: Coffee Bean Sales Raw Dataset [KAGGLE](https://www.kaggle.com/datasets/s
 24. The Sales column values were calculated as PRODUCT(F2,M2) where F2 is Quantity, and M2 is Unit Price
 25. The order dataset was selected with CTRL + T and converted to table and named Order_Table
 
+## Found a Typo? Want to Contribute?
+- If you find any error in this project, please feel free to make a pull request by:
+  - Forking the repo
+  - Making any changes
+  - Submitting a pull request.
 
 
 
