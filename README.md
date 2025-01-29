@@ -48,7 +48,7 @@ Source: Coffee Bean Sales Raw Dataset [KAGGLE](https://www.kaggle.com/datasets/s
 
 1. The dataset covers the 4 years (2nd January 2019 to 19th August 2022)
 2. There are 1,000 unique Orders (No Duplicates)
-3. Orders Tab Dataset was sorted in Ascending order by Order Date using the "custom sort"
+3. Orders tab dataset was sorted in ascending order by Order_Date column using the "custom sort"
 4. A helper column was created for the Order ID column and "LEN()" function was used to confirm that there was no spaces in any of the Order IDs. Output of LEN() was 13 for all Order IDs.
 5. A helper column was created for the Order ID column and "TEXT(value,"###-#####-###")" function was used to ensure the text format was the same for all Order IDs.
 6. Steps 4 & 5 were repeated for the Customer ID column in orders tab dataset. "LEN()" function gave 14 for all Customer ID.
