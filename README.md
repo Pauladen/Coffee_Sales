@@ -15,7 +15,7 @@ Global Coffee Supplies Ltd. operates as a wholesaler of coffee beans, catering t
 
 ### Dataset Overview:
 Source: Coffee Bean Sales Raw Dataset (KAGGLE)
-[](https://www.kaggle.com/datasets/saadharoon27/coffee-bean-sales-raw-dataset)
+[] ( https://www.kaggle.com/datasets/saadharoon27/coffee-bean-sales-raw-dataset)
 
 
 
