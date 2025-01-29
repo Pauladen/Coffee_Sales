@@ -13,6 +13,9 @@ Global Coffee Supplies Ltd. operates as a wholesaler of coffee beans, catering t
 - Pricing Strategy: Evaluate the impact of pricing on sales volume
 - Inventory Optimization: Provide recommendations for inventory turnover improvement.
 
+### Dataset Overview:
+Source: Coffee Bean Sales Raw Dataset (KAGGLE)
+
 
 
 
