@@ -53,24 +53,23 @@ Source: Coffee Bean Sales Raw Dataset [KAGGLE](https://www.kaggle.com/datasets/s
 5. A helper column was created for the Order ID column and "TEXT(value,"###-#####-###")" function was used to ensure the text format was the same for all Order IDs.
 6. Steps 4 & 5 were repeated for the Customer ID column in orders tab dataset. "LEN()" function gave 14 for all Customer ID.
 7. There are 1,000 unique Customers (No Duplicates)
-8. Steps 4 & 5 were repeated for the Customer ID column in the customers tab dataset. "LEN()" function gave 14 for all Customer ID.
-9. The PROPER(CLEAN(TRIM(B2))) functions was used to remove trailing spaces and convert every Customer Name to the Proper case
-10. The LEFT(B2,SEARCH(" ",B2)-1) functions was used to extract the First Name from Customer Name
-11. The RIGHT(B2,LEN(B2)-SEARCH(" ",B2)) functions were used to extract Surname fro Customer Name
-12. The IF(ISNUMBER(SEARCH("' ",D2)),SUBSTITUTE(D2,"' ","'"),D2) functions were used to remove space found after ' string in the Surname Column
-13. A helper column was created for the Customer Name and the CONCATENATE(D2," ",G2) function was used to merge the First Name in step 10 with Surname in step 12
-14. The customers table has 204 empty Emails. This value was confirmed with COUNTBLANK() FUNCTION
-15. Each email in the custumers table have a pattern of concatenated first letter in the First Name (ie. First Name Initials), Surname, "@" string, and domain name.
-16. A helper column was created for First Name column and LEFT(C2,LEN(C2)-(LEN(C2)-1)) functions were used to make the First Name Initials
-17. A helper column was created for the Email Column and the LOWER(IF(G2="",CONCATENATE(D2,F2,"@","gmail.com"),G2)) functions were used to create new emails addresses for blank emails and to repeat existing email addresses.
-18. A helper column was created for the Address Line 1 to extract the number(s) that preceeded the Address names. LEFT(K2,SEARCH(" ",K2)-1) functions was used, and the helper column called Address Numbers. Each address in the Address Line 1 was preceeded by number(s)
-19. A helper column was created for the Address Line 1 to extract the Address Name. MID(K2,SEARCH(" ",K2)+1,LEN(K2)-SEARCH(" ",K2)) function was used and the helper column labeled Address Name
-20. A helper column was created for the Address Line 1 to merge Address Number to Address Name with a comma separation using CONCATENATE(L2,", ",M2) function
-21. A helper column was created for Phone Number. 130 empty phone numbers were found using COUNTBLANK() function. Blank cells were replaced with NONE string using  IF(F2="","NONE",F2) function
-22. The Customer Name, Email, and Country columns  of the orders table were populated from the customers table using VLOOKUP() function where the lookup value is the Customer ID in the orders table
-23. The Coffee Type, Roast Type, Size , and Unit Price of the orders table were populated from the product table using VLOOKUP() function where the lookup value is the Product ID in the orders table.
-24. The Sales column values were calculated as PRODUCT(F2,M2) where F2 is Quantity, and M2 is Unit Price
-25. The order dataset was selected with CTRL + T and converted to table and named Order_Table
+8. The PROPER(CLEAN(TRIM(B2))) functions was used to remove trailing spaces and convert every Customer Name to the Proper case
+9. The LEFT(B2,SEARCH(" ",B2)-1) functions was used to extract the First Name from Customer Name
+10. The RIGHT(B2,LEN(B2)-SEARCH(" ",B2)) functions were used to extract Surname fro Customer Name
+11. The IF(ISNUMBER(SEARCH("' ",D2)),SUBSTITUTE(D2,"' ","'"),D2) functions were used to remove space found after ' string in the Surname Column
+12. A helper column was created for the Customer Name and the CONCATENATE(D2," ",G2) function was used to merge the First Name in step 10 with Surname in step 12
+13. The customers table has 204 empty Emails. This value was confirmed with COUNTBLANK() FUNCTION
+14. Each email in the customers table have a pattern of concatenated first letter in the First Name (ie. First Name Initials), Surname, "@" string, and domain name.
+15. A helper column was created for First Name column and LEFT(C2,LEN(C2)-(LEN(C2)-1)) functions were used to make the First Name Initials
+16. A helper column was created for the Email Column and the LOWER(IF(G2="",CONCATENATE(D2,F2,"@","gmail.com"),G2)) functions were used to create new emails addresses for blank emails and to repeat existing email addresses.
+17. A helper column was created for the Address Line 1 to extract the number(s) that preceeded the Address names. LEFT(K2,SEARCH(" ",K2)-1) functions was used, and the helper column called Address Numbers. Each address in the Address Line 1 was preceeded by number(s)
+18. A helper column was created for the Address Line 1 to extract the Address Name. MID(K2,SEARCH(" ",K2)+1,LEN(K2)-SEARCH(" ",K2)) function was used and the helper column labeled Address Name
+19. A helper column was created for the Address Line 1 to merge Address Number to Address Name with a comma separation using CONCATENATE(L2,", ",M2) function
+20. A helper column was created for Phone Number. 130 empty phone numbers were found using COUNTBLANK() function. Blank cells were replaced with NONE string using  IF(F2="","NONE",F2) function
+21. The Customer Name, Email, and Country columns  of the orders table were populated from the customers table using VLOOKUP() function where the lookup value is the Customer ID in the orders table
+22. The Coffee Type, Roast Type, Size , and Unit Price of the orders table were populated from the product table using VLOOKUP() function where the lookup value is the Product ID in the orders table.
+23. The Sales column values were calculated as PRODUCT(F2,M2) where F2 is Quantity, and M2 is Unit Price
+24. The order dataset was selected with CTRL + T and converted to table and named Order_Table
 
 ## Found a Typo? Want to Contribute?
 - If you find any error in this project, please feel free to make a pull request by:
